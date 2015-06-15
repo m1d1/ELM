@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><meta name="keywords" content="ELM,util.elm.ELM,AUTHOR,AUTOREMOVE,JOB_ADD,JOB_DISABLE,JOB_ENABLE,JOB_REMOVE,JOB_SHOW,LOG_ERROR,LOG_INFO,LOG_LISTING,LOG_PROFILING,LOG_SHOWING,LOG_WARNING,PROTECTED,VERSION,eventMappings,object,useCapture,useIterator,verboseLevel,add,add2,addEventMapping,addGroupNames,cloneAdd,disableAll,disableEvent,disableEventMapping,disableGroup,disableListener,disableListenerEvent,disableObj,enableAll,enableEvent,enableEventMapping,enableGroup,enableListener,enableListenerEvent,enableObj,eventMappingsLength,findEventMapping,findGroup,getELMIterator,getEventMappings,getIterator,init,initLogger,installLogger,installProfiler,lastChangesLength,length,listAutoRemoves,listGroups,listObjects,listProtected,modifyGroupNames,removeAll,removeEvent,removeEventMapping,removeGroup,removeGroupNames,removeListener,removeListenerEvent,removeObj,resetIterator,showAll,showEvent,showEventMappings,showGroup,showListener,showListenerEvent,showObj,status,uninstallProfiler"><title>util.elm.ELM</title></head><body><script language="javascript" type="text/javascript" src="../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../help.js"></script><script language="javascript" type="text/javascript" src="../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'ELM - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../package-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../class-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../all-index-A.html" onclick="loadClassListFrame('../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../index.html?util/elm/ELM.html&amp;util/elm/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">ELM</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("ELM"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">util.elm</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  ELM</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">ELM  <img src="../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	 ELM Main Class.
+	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#useCapture" class="signatureLink">useCapture</a> : Boolean = false<div class="summaryTableDescription">[static]  </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#useIterator" class="signatureLink">useIterator</a> : Boolean = false<div class="summaryTableDescription">[static]  </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#verboseLevel" class="signatureLink">verboseLevel</a> : int = 1<div class="summaryTableDescription">[static]  </div></td><td class="summaryTableOwnerCol">ELM</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#add()" class="signatureLink">add</a>(obj:IEventDispatcher, evt:String, fct:Function, group:String, special:String):void</div><div class="summaryTableDescription">[static] 
+		Adds an eventListener
+			
+		</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#add2()" class="signatureLink">add2</a>(obj:IEventDispatcher, evt:String, fct:Function, groups:Array, special:String):void</div><div class="summaryTableDescription">[static] 
+		Adds an eventListener but with multiple groupnames
+		</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addGroupNames()" class="signatureLink">addGroupNames</a>(obj:IEventDispatcher, grpArr:Array):void</div><div class="summaryTableDescription">[static] 
+		 Add more group names to an EventDispatcher  
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#cloneAdd()" class="signatureLink">cloneAdd</a>(obj:IEventDispatcher, arr:Array):void</div><div class="summaryTableDescription">[static] 
+		Adds eventMappings (event/listener) from an existing EventDispatcher to (multiple) other EventDispatchers
+		this is useful if you want to bind several buttons with the same events and listener method.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disableAll()" class="signatureLink">disableAll</a>():void</div><div class="summaryTableDescription">[static] 
+		 Disable all enabled eventMappings
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disableEvent()" class="signatureLink">disableEvent</a>(evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Disable all eventMappings with a specific event
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disableGroup()" class="signatureLink">disableGroup</a>(... grps):void</div><div class="summaryTableDescription">[static] 
+		 Disable all eventMappings from a group
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disableListener()" class="signatureLink">disableListener</a>(fct:Function):void</div><div class="summaryTableDescription">[static] 
+		 Disables all eventMappings which are mapped to a specific function
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disableListenerEvent()" class="signatureLink">disableListenerEvent</a>(fct:Function, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Disable all eventMappings which are mapped to a specific event and function
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disableObj()" class="signatureLink">disableObj</a>(obj:IEventDispatcher, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Disable eventmappings from a specific EventDispatcher with optional specific event
+		 if no event is given all EventDispatcher's events will be disabled.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enableAll()" class="signatureLink">enableAll</a>():void</div><div class="summaryTableDescription">[static] 
+		 Enable all disabled eventMappings
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enableEvent()" class="signatureLink">enableEvent</a>(evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Enable all eventMappings with a specific event
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enableGroup()" class="signatureLink">enableGroup</a>(... grps):void</div><div class="summaryTableDescription">[static] 
+		 Enable all eventMappings from a group
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enableListener()" class="signatureLink">enableListener</a>(fct:Function):void</div><div class="summaryTableDescription">[static] 
+		 Enable all eventMappings which are mapped to a specific function
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enableListenerEvent()" class="signatureLink">enableListenerEvent</a>(fct:Function, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Enable all eventMappings which are mapped to a specific event and function		
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enableObj()" class="signatureLink">enableObj</a>(obj:IEventDispatcher, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Enable eventmappings from a specific EventDispatcher with optional specific event
+		 if no event is given all EventDispatcher's events will be enabled.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getELMIterator()" class="signatureLink">getELMIterator</a>():<a href="../../util/elm/iterator/ELMIterator.html">ELMIterator</a></div><div class="summaryTableDescription">[static] 
+		 Returns an iterator of ELM's current EventDispatchers
+		 For test purposes only!!! Use for read-only.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getIterator()" class="signatureLink">getIterator</a>():<a href="../../util/elm/iterator/ELMIterator.html">ELMIterator</a></div><div class="summaryTableDescription">[static] 
+		 Returns an iterator of the last modified EventDispatchers
+		 NOTE THAT 
+		 ELM.useIterator = true 
+		 must be set to enable this feature, by default it's disabled!
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#init()" class="signatureLink">init</a>():void</div><div class="summaryTableDescription">[static] 
+		 Initializes ELM
+		 This method will be called automatically when using ELM.add() or ELM.installLogger().</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initLogger()" class="signatureLink">initLogger</a>():void</div><div class="summaryTableDescription">[static] 
+		 This (re)sets the ELM logger to the default util.loggers.TraceLogger
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#installLogger()" class="signatureLink">installLogger</a>(l:<a href="../../util/elm/loggers/IELMLogger.html">IELMLogger</a>):void</div><div class="summaryTableDescription">[static] 
+		 This installs the logger class of your choice which handles ELM's
+		 info, warn and error messages.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#installProfiler()" class="signatureLink">installProfiler</a>(c:<a href="../../util/elm/profiler/IELMProfilable.html">IELMProfilable</a>):void</div><div class="summaryTableDescription">[static] 
+		 This installs a custom profiling method which generates trace-outs about
+		 the current ELM operation.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#lastChangesLength()" class="signatureLink">lastChangesLength</a>():int</div><div class="summaryTableDescription">[static] 
+		 Returns how many EventDispatchers were modified by the last performed operation.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#length()" class="signatureLink">length</a>():int</div><div class="summaryTableDescription">[static] 
+		 Returns the length of ELM's EventDispatchers objects.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#listAutoRemoves()" class="signatureLink">listAutoRemoves</a>():void</div><div class="summaryTableDescription">[static] 
+		 List all EventDispatchers and their Events with the auto_remove property in the logger
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#listGroups()" class="signatureLink">listGroups</a>():void</div><div class="summaryTableDescription">[static] 
+		 List all Groups in the logger
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#listObjects()" class="signatureLink">listObjects</a>():void</div><div class="summaryTableDescription">[static] 
+		 List all EventDispatchers and their Events in the logger
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#listProtected()" class="signatureLink">listProtected</a>():void</div><div class="summaryTableDescription">[static] 
+		 List all EventDispatchers and their Events with the protected property in the logger
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeAll()" class="signatureLink">removeAll</a>():void</div><div class="summaryTableDescription">[static] 
+		 Remove all eventMappings
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeEvent()" class="signatureLink">removeEvent</a>(evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Remove all eventMappings with a specific event	
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeGroup()" class="signatureLink">removeGroup</a>(... grps):void</div><div class="summaryTableDescription">[static] 
+		 Remove all eventMappings from a group 
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeGroupNames()" class="signatureLink">removeGroupNames</a>(obj:IEventDispatcher, grpArr:Array):void</div><div class="summaryTableDescription">[static] 
+		 Remove group names from an EventDispatcher
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeListener()" class="signatureLink">removeListener</a>(fct:Function):void</div><div class="summaryTableDescription">[static] 
+		 Remove all eventMappings which are mapped to a specific function
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeListenerEvent()" class="signatureLink">removeListenerEvent</a>(fct:Function, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Remove all eventMappings which are mapped to a specific event and function 
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeObj()" class="signatureLink">removeObj</a>(obj:IEventDispatcher, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Remove eventmappings from a specific EventDispatcher with optional specific event
+		 if no event is given all events will be removed from the EventDispatcher.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#resetIterator()" class="signatureLink">resetIterator</a>():void</div><div class="summaryTableDescription">[static]  
+		 Reset the result Iterator
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#showAll()" class="signatureLink">showAll</a>():void</div><div class="summaryTableDescription">[static] 
+		 Show all EventDispatchers, events, groups and properties
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#showEvent()" class="signatureLink">showEvent</a>(evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Show all eventMappings with a specific event
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#showGroup()" class="signatureLink">showGroup</a>(grp:String):void</div><div class="summaryTableDescription">[static] 
+		 Show all eventMappings from a group
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#showListener()" class="signatureLink">showListener</a>(fct:Function):void</div><div class="summaryTableDescription">[static] 
+		 Show all eventMappings which are mapped to a specific function
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#showListenerEvent()" class="signatureLink">showListenerEvent</a>(fct:Function, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Show all eventMappings which are mapped to a specific event and function
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#showObj()" class="signatureLink">showObj</a>(obj:IEventDispatcher, evt:String):void</div><div class="summaryTableDescription">[static] 
+		 Show eventmappings from a specific EventDispatcher with optional specific event
+		 if the optional event is given, it only shows that in the logger if present.</div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#status()" class="signatureLink">status</a>():void</div><div class="summaryTableDescription">[static] 
+		 Returns how many EventDispatchers and Events are mapped
+		 
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#uninstallProfiler()" class="signatureLink">uninstallProfiler</a>():void</div><div class="summaryTableDescription">[static] 
+		 Remove/uninstall profiling
+		 </div></td><td class="summaryTableOwnerCol">ELM</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#AUTHOR" class="signatureLink">AUTHOR</a> : String = Michael Dinkelaker<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#AUTOREMOVE" class="signatureLink">AUTOREMOVE</a> : String = AUTO_REMOVE<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#JOB_ADD" class="signatureLink">JOB_ADD</a> : String = ADD<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#JOB_DISABLE" class="signatureLink">JOB_DISABLE</a> : String = DISABLE<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#JOB_ENABLE" class="signatureLink">JOB_ENABLE</a> : String = ENABLE<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#JOB_REMOVE" class="signatureLink">JOB_REMOVE</a> : String = REMOVE<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#JOB_SHOW" class="signatureLink">JOB_SHOW</a> : String = SHOW<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG_ERROR" class="signatureLink">LOG_ERROR</a> : int = 60<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG_INFO" class="signatureLink">LOG_INFO</a> : int = 20<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG_LISTING" class="signatureLink">LOG_LISTING</a> : int = 1<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG_PROFILING" class="signatureLink">LOG_PROFILING</a> : int = 3<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG_SHOWING" class="signatureLink">LOG_SHOWING</a> : int = 2<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOG_WARNING" class="signatureLink">LOG_WARNING</a> : int = 40<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#PROTECTED" class="signatureLink">PROTECTED</a> : String = PROTECTED<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 1.52<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">ELM</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="useCapture"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">useCapture</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public static var useCapture:Boolean = false</code><p></p><p></p><p> </p><p> The default value is <code>false set this to true if you want to enable the useCapture in addEventListener()</code>.</p></div><a name="propertyDetail"></a><a name="useIterator"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">useIterator</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var useIterator:Boolean = false</code><p></p><p></p><p> </p><p> The default value is <code>false set this to true if you want to use the Iterator to access the last modified Objects</code>.</p></div><a name="propertyDetail"></a><a name="verboseLevel"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">verboseLevel</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var verboseLevel:int = 1</code><p></p><p></p><p> </p><p> The default value is <code>LOG_LISTING sets logging filter level. messages with the set value or greater will be logged. values are: LOG_LISTING:int = 1 (default show all), LOG_SHOWING:int = 2 LOG_PROFILING:int = 3 LOG_INFO:int = 20 LOG_WARNING:int = 40 LOG_ERROR:int = 60</code>.</p></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="add()"></a><a name="add(flash.events.IEventDispatcher,String,Function,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">add</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function add(obj:IEventDispatcher, evt:String, fct:Function, group:String, special:String):void</code><p></p><p></p><p>
+		Adds an eventListener
+			
+		</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code> &mdash; String="" (optional) (since v1.28 ELM can handle more Groups. 
+		To keep it compatible with prior releases you can add only one group here. </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code> &mdash; String="" (optional) ELM.PROTECTED or ELM.AUTOREMOVE
+		PROTECTED mappings can't be disabled or removed
+		AUTOREMOVE mappings can't be disabled 
+		
+		</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">group</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">special</span>:String</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso">ELM.addGroups())</div><br/><span class="label"> Example </span><br/><div class="detailBody">
+		<div class="listing" version="4.0"><pre>import util.elm.ELM;
+         ELM.add(mySprite, MouseEvent.CLICK, mouseHandler);  //  add with no group
+         ELM.add(mySprite0, MouseEvent.CLICK, mouseHandler, "myGroup");  //  add to group "myGroup";
+         ELM.add(mySprite0, MouseEvent.MOUSE_OVER, mouseHandler, "otherGroup");  //  mySprite0 belongs to "myGroup" and "otherGroup" (since 1.50)
+         ELM.add(mySprite1, MouseEvent.CLICK, mouseHandler, "myGroup", ELM.AUTOREMOVE);  //  same group, but autoremoving when triggered
+         ELM.add(mySprite2, MouseEvent.CLICK, mouseHandler, "myGroup", ELM.PROTECTED);  //  same group, but protected (not removable)
+         function mouseHandler(e:MouseEvent):void {
+             trace("after this click you can't click me again - because auto_remove was set to true!");
+         }
+        </pre></div>
+		</div></div><a name="add2()"></a><a name="add2(flash.events.IEventDispatcher,String,Function,Array,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">add2</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function add2(obj:IEventDispatcher, evt:String, fct:Function, groups:Array, special:String):void</code><p></p><p></p><p>
+		Adds an eventListener but with multiple groupnames
+		</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code> &mdash; Array with groupname strings per element
+		
+		</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">groups</span>:Array</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">special</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">
+		<div class="listing" version="4.0"><pre>import util.elm.ELM;
+         ELM.add(mySprite, MouseEvent.CLICK, mouseHandler, ["myGroup", "otherGroup"]);
+        </pre></div>   		
+		</div></div><a name="addGroupNames()"></a><a name="addGroupNames(flash.events.IEventDispatcher,Array)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addGroupNames</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function addGroupNames(obj:IEventDispatcher, grpArr:Array):void</code><p></p><p></p><p>
+		 Add more group names to an EventDispatcher  
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">grpArr</span>:Array</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">add groupA and pageC to spr" 
+		 <div class="listing" version="4.0"><pre> 
+         ELM.add(spr, MouseEvent.CLICK, mouseHandler, "myGroup");
+         ELM.add(spr, MouseEvent.ROLL_OVER, mouseHandler, "otherGroup"); 
+         ELM.addGroupNames(spr, ["groupA", "pageC"]);  //  spr belongs to groups: "myGroup, otherGroup, groupA, pageC"
+         </pre></div>
+		 </div></div><a name="cloneAdd()"></a><a name="cloneAdd(flash.events.IEventDispatcher,Array)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">cloneAdd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function cloneAdd(obj:IEventDispatcher, arr:Array):void</code><p></p><p></p><p>
+		Adds eventMappings (event/listener) from an existing EventDispatcher to (multiple) other EventDispatchers
+		this is useful if you want to bind several buttons with the same events and listener method.
+		note that the enabled/disabled state, autoremove/protected and all groupnames will be cloned, too.
+		
+		</p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code> &mdash; IEventDispatcher existing EventDispatcher in ELM to clone to
+		</td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">arr</span>:Array</code> &mdash; IEventDispatchers new EventDispatchers
+		
+		</td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">
+		<div class="listing" version="4.0"><pre>import util.elm.ELM;
+         ELM.add(mySprite, MouseEvent.CLICK, mouseHandler, ["myGroup"]);
+         ELM.add(mySprite, MouseEvent.ROLL_OVER, mouseHandler);  
+         ELM.add(mySprite, MouseEvent.ROLL_OUT, mouseHandler); 
+        
+         ELM.cloneAdd(mySprite, [otherSprite, btn0, btn1, btn2]);  //  clone click, rollover, rollout, "myGroup" to mouseHandler to btn0 - btn2
+        
+        
+        </pre></div>   		
+		</div></div><a name="disableAll()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disableAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function disableAll():void</code><p></p><p></p><p>
+		 Disable all enabled eventMappings
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.disableAll();</pre></div>
+		 </div></div><a name="disableEvent()"></a><a name="disableEvent(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disableEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function disableEvent(evt:String):void</code><p></p><p></p><p>
+		 Disable all eventMappings with a specific event
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">disable all clicks: <div class="listing" version="4.0"><pre> ELM.disableEvent(MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="disableGroup()"></a><a name="disableGroup(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disableGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function disableGroup(... grps):void</code><p></p><p></p><p>
+		 Disable all eventMappings from a group
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">grps</span></code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">disable all member events of group "myGroup" <div class="listing" version="4.0"><pre> ELM.disableGroup("myGroup");
+         ELM.disableGroup("myGroup", "otherGroup", "groupC"); //  since 1.50 disable three groups
+         </pre></div>
+		 </div></div><a name="disableListener()"></a><a name="disableListener(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disableListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function disableListener(fct:Function):void</code><p></p><p></p><p>
+		 Disables all eventMappings which are mapped to a specific function
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.disableListener(mouseHandler);</pre></div>
+		 </div></div><a name="disableListenerEvent()"></a><a name="disableListenerEvent(Function,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disableListenerEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function disableListenerEvent(fct:Function, evt:String):void</code><p></p><p></p><p>
+		 Disable all eventMappings which are mapped to a specific event and function
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.disableListenerEvent(mouseHandler, MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="disableObj()"></a><a name="disableObj(flash.events.IEventDispatcher,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disableObj</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function disableObj(obj:IEventDispatcher, evt:String):void</code><p></p><p></p><p>
+		 Disable eventmappings from a specific EventDispatcher with optional specific event
+		 if no event is given all EventDispatcher's events will be disabled. 
+		 	 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code> &mdash; String="" (optional). 
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.disableObj(mySprite, MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="enableAll()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function enableAll():void</code><p></p><p></p><p>
+		 Enable all disabled eventMappings
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.enableAll();</pre></div>
+		 </div></div><a name="enableEvent()"></a><a name="enableEvent(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function enableEvent(evt:String):void</code><p></p><p></p><p>
+		 Enable all eventMappings with a specific event
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">enable all clicks: <div class="listing" version="4.0"><pre> ELM.enableEvent(MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="enableGroup()"></a><a name="enableGroup(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function enableGroup(... grps):void</code><p></p><p></p><p>
+		 Enable all eventMappings from a group
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">grps</span></code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">enable all member events of group "myGroup" <div class="listing" version="4.0"><pre> ELM.enableGroup("myGroup");
+         ELM.enableGroup("myGroup", "otherGroup", "groupC"); //  since 1.50 enable three groups 
+         </pre></div>
+		 </div></div><a name="enableListener()"></a><a name="enableListener(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function enableListener(fct:Function):void</code><p></p><p></p><p>
+		 Enable all eventMappings which are mapped to a specific function
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.enableListener(mouseHandler);</pre></div>
+		 </div></div><a name="enableListenerEvent()"></a><a name="enableListenerEvent(Function,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableListenerEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function enableListenerEvent(fct:Function, evt:String):void</code><p></p><p></p><p>
+		 Enable all eventMappings which are mapped to a specific event and function		
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.enableListenerEvent(mouseHandler, MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="enableObj()"></a><a name="enableObj(flash.events.IEventDispatcher,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enableObj</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function enableObj(obj:IEventDispatcher, evt:String):void</code><p></p><p></p><p>
+		 Enable eventmappings from a specific EventDispatcher with optional specific event
+		 if no event is given all EventDispatcher's events will be enabled. 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code> &mdash; String="" (optional).
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.enableObj(mySprite, MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="getELMIterator()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getELMIterator</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getELMIterator():<a href="../../util/elm/iterator/ELMIterator.html">ELMIterator</a></code><p></p><p></p><p>
+		 Returns an iterator of ELM's current EventDispatchers
+		 For test purposes only!!! Use for read-only.
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../util/elm/iterator/ELMIterator.html">ELMIterator</a></code> &mdash; ELMIterator
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso">getIterator()</div></div><a name="getIterator()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getIterator</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getIterator():<a href="../../util/elm/iterator/ELMIterator.html">ELMIterator</a></code><p></p><p></p><p>
+		 Returns an iterator of the last modified EventDispatchers
+		 NOTE THAT 
+		 ELM.useIterator = true 
+		 must be set to enable this feature, by default it's disabled!
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../util/elm/iterator/ELMIterator.html">ELMIterator</a></code> &mdash; ELMIterator
+		 
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre>
+         
+         import util.elm.ELM;
+         import util.elm.iterator.ELMIterator;
+         
+         //  add two Sprites
+         ELM.add(mySprite0, MouseEvent.CLICK, mouseHandler, "myGroup", true);
+         ELM.add(mySprite1, MouseEvent.CLICK, mouseHandler, "myGroup", true);
+         
+         //  remove Events
+         ELM.useIterator = true; //  this must be set anywhere only once, since it's a static var!
+         ELM.removeGroup("myGroup");
+         
+         //  remove Children from Stage
+         var it:ELMIterator = ELM.getIterator();
+         while (it.hasNext()) {
+             removeChild(it.next());
+         }
+         </pre></div>
+		 </div></div><a name="init()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function init():void</code><p></p><p></p><p>
+		 Initializes ELM
+		 This method will be called automatically when using ELM.add() or ELM.installLogger().
+		 This only needs to be called once. However you may call this manually.
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.init();</pre></div>
+		 </div></div><a name="initLogger()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">initLogger</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function initLogger():void</code><p></p><p></p><p>
+		 This (re)sets the ELM logger to the default util.loggers.TraceLogger
+		 </p><p><span class="label">See also</span></p><div class="seeAlso">installLogger</div><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.initLogger();</pre></div>
+		 </div></div><a name="installLogger()"></a><a name="installLogger(util.elm.loggers.IELMLogger)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">installLogger</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function installLogger(l:<a href="../../util/elm/loggers/IELMLogger.html">IELMLogger</a>):void</code><p></p><p></p><p>
+		 This installs the logger class of your choice which handles ELM's
+		 info, warn and error messages. 
+		 (show, listing, profiling messages = info)
+		 
+		 By default ELM uses the util.elm.loggers.TraceLogger
+		 There are some presets for Arthropod, ThunderboldAS3, DeMonsterDebugger, etc.
+		 You need to download the logger classes yourself, these are not included with ELM. 
+		 check: util.elm.loggers - open the .as template and read all informations are in there!
+		 				 		  		
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">l</span>:<a href="../../util/elm/loggers/IELMLogger.html">IELMLogger</a></code> &mdash; class instance which implements the IELMLogger
+		 
+		 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre>
+         import util.elm.ELM;         
+         import util.elm.loggers.ThunderBoldAS3;
+         
+         package {
+             public class MyClass extends Sprite {
+         
+                 public function MyClass() {
+                        ELM.installLogger(new ThunderBoldAS3());         
+                        // ELM.installLogger(new Arthropod());
+                 }             
+         }
+         </pre></div>
+
+		 </div></div><a name="installProfiler()"></a><a name="installProfiler(util.elm.profiler.IELMProfilable)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">installProfiler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function installProfiler(c:<a href="../../util/elm/profiler/IELMProfilable.html">IELMProfilable</a>):void</code><p></p><p></p><p>
+		 This installs a custom profiling method which generates trace-outs about
+		 the current ELM operation.
+		 This might come handy for application debugging and profiling.
+		 The users class needs to implement the util.profiler.IELMProfilable Interface.
+		 The required method interceptFilter returns true or false.
+		 If it returns true the current action will generate a traced-out or log.
+		 See example below.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">c</span>:<a href="../../util/elm/profiler/IELMProfilable.html">IELMProfilable</a></code> &mdash; Class which implements the IELMprofilable Interface
+		 
+		 
+		 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre>
+         import util.elm.ELM;
+         import util.elm.profiler.IELMProfilable;
+         import flash.display.Sprite;
+         import flash.events.IEventDispatcher;
+         import flash.events.MouseEvent;
+         
+         package {
+             public class MyClass extends Sprite implements IELMProfilable {
+         
+                 public function MyClass() {
+                     ELM.installProfiler(this);  //  installs the profiler
+                     ELM.add(this, MouseEvent.CLICK, mouseHandler, "myGroup");
+                 }
+         
+                 function interceptFilter(obj:IEventDispatcher, group:String, job:String, mObj:Object):Boolean {         
+                         //
+                         // obj:IEventDispatcher -- current EventDispatcher
+                         // group:String -- group name
+                         // job:String -- current job. Use constants for comparisons:
+                         //     ELM.JOB_ADD, ELM.JOB_REMOVE, ELM.JOB_DISABLE, ELM.JOB_ENABLE, ELM.JOB_SHOW
+                         //
+                            // mObj is the ELMObjects internal class ELMMO (short for ELM Mapping Object) 
+                         // mObj.event:String --  current Event
+                         // mObj.listener:Function -- current EventHandler Function
+                         // mObj.auto_remove:Boolean -- true if it's auto_remove
+                         // mObj.enabled:Boolean -- true if Event is enabled
+         
+                         //  profile all ADDs
+                         if (job == ELM.JOB_ADD) return true;  //  true = trace-out action
+                         else return false;  //  false = don't 
+                 }
+             }
+         }
+         </pre></div>
+		 </div></div><a name="lastChangesLength()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">lastChangesLength</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function lastChangesLength():int</code><p></p><p></p><p>
+		 Returns how many EventDispatchers were modified by the last performed operation.
+		 This concerns only the last remove, disable or enable operation. 
+		 add, show, lists operations don't change or reset this value.
+		 Call ELM.resetIterator(); to reset this value to zero.
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; length of changed EventDispatchers
+		 
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> var val:int = ELM.lastChangesLength();</pre></div>
+		 </div></div><a name="length()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">length</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function length():int</code><p></p><p></p><p>
+		 Returns the length of ELM's EventDispatchers objects.
+		 Each object can listen to several events
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; length of changed EventDispatchers
+		 
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> var val:int = ELM.lastChangesLength();</pre></div>
+		 </div></div><a name="listAutoRemoves()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">listAutoRemoves</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function listAutoRemoves():void</code><p></p><p></p><p>
+		 List all EventDispatchers and their Events with the auto_remove property in the logger
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.listAutoRemoves();</pre></div>
+		 </div></div><a name="listGroups()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">listGroups</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function listGroups():void</code><p></p><p></p><p>
+		 List all Groups in the logger
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.listGroups();</pre></div>
+		 </div></div><a name="listObjects()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">listObjects</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function listObjects():void</code><p></p><p></p><p>
+		 List all EventDispatchers and their Events in the logger
+		 
+		 </p></div><a name="listProtected()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">listProtected</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function listProtected():void</code><p></p><p></p><p>
+		 List all EventDispatchers and their Events with the protected property in the logger
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.listAutoRemoves();</pre></div>
+		 </div></div><a name="removeAll()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeAll():void</code><p></p><p></p><p>
+		 Remove all eventMappings
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.removeAll();</pre></div>
+		 </div></div><a name="removeEvent()"></a><a name="removeEvent(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeEvent(evt:String):void</code><p></p><p></p><p>
+		 Remove all eventMappings with a specific event	
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">remvove all clicks: <div class="listing" version="4.0"><pre> ELM.removeEvent(MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="removeGroup()"></a><a name="removeGroup(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeGroup(... grps):void</code><p></p><p></p><p>
+		 Remove all eventMappings from a group 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">grps</span></code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">remove all member events of group "myGroup" 
+		 <div class="listing" version="4.0"><pre> ELM.removeGroup("myGroup");
+         ELM.removeGroup("myGroup", "otherGroup", "groupC"); //  since 1.50 remove three groups
+         </pre></div>
+		 </div></div><a name="removeGroupNames()"></a><a name="removeGroupNames(flash.events.IEventDispatcher,Array)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeGroupNames</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeGroupNames(obj:IEventDispatcher, grpArr:Array):void</code><p></p><p></p><p>
+		 Remove group names from an EventDispatcher
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">grpArr</span>:Array</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre>
+          ELM.add(mySprite0, MouseEvent.CLICK, mouseHandler, "myGroup");  //  add to group "myGroup";
+          ELM.add2(mySprite0, MouseEvent.MOUSE_OVER, mouseHandler, ["otherGroup", "groupC"]);  //  mySprite0 belongs to "myGroup", "otherGroup" and "groupC"         
+          ELM.removeGroupNames(mySprite0, ["otherGroup, "groupC"]); //  mySprite0 belongs to group "myGroup"
+         </pre></div>
+		 </div></div><a name="removeListener()"></a><a name="removeListener(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeListener(fct:Function):void</code><p></p><p></p><p>
+		 Remove all eventMappings which are mapped to a specific function
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.removeListener(mouseHandler);</pre></div>
+		 </div></div><a name="removeListenerEvent()"></a><a name="removeListenerEvent(Function,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeListenerEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeListenerEvent(fct:Function, evt:String):void</code><p></p><p></p><p>
+		 Remove all eventMappings which are mapped to a specific event and function 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.removeListenerEvent(mouseHandler, MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="removeObj()"></a><a name="removeObj(flash.events.IEventDispatcher,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeObj</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeObj(obj:IEventDispatcher, evt:String):void</code><p></p><p></p><p>
+		 Remove eventmappings from a specific EventDispatcher with optional specific event
+		 if no event is given all events will be removed from the EventDispatcher. 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code> &mdash; String="" (optional). 
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.removeObj(mySprite, MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="resetIterator()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">resetIterator</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function resetIterator():void</code><p></p><p></p><p> 
+		 Reset the result Iterator
+		 </p><p><span class="label">See also</span></p><div class="seeAlso">getIterator()</div><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.resetIterator();</pre></div>
+		 </div></div><a name="showAll()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">showAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function showAll():void</code><p></p><p></p><p>
+		 Show all EventDispatchers, events, groups and properties
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.showAll();</pre></div>
+		 </div></div><a name="showEvent()"></a><a name="showEvent(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">showEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function showEvent(evt:String):void</code><p></p><p></p><p>
+		 Show all eventMappings with a specific event
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">show all clicks <div class="listing" version="4.0"><pre> ELM.showEvent(MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="showGroup()"></a><a name="showGroup(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">showGroup</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function showGroup(grp:String):void</code><p></p><p></p><p>
+		 Show all eventMappings from a group
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">grp</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">show all member events of group "myGroup" <div class="listing" version="4.0"><pre> ELM.showGroup("myGroup");</pre></div>
+		 </div></div><a name="showListener()"></a><a name="showListener(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">showListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function showListener(fct:Function):void</code><p></p><p></p><p>
+		 Show all eventMappings which are mapped to a specific function
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.showListener(mouseHandler);</pre></div>
+		 </div></div><a name="showListenerEvent()"></a><a name="showListenerEvent(Function,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">showListenerEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function showListenerEvent(fct:Function, evt:String):void</code><p></p><p></p><p>
+		 Show all eventMappings which are mapped to a specific event and function
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">fct</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.showListenerEvent(mouseHandler, MouseEvent.CLICK);</pre></div>
+		 </div></div><a name="showObj()"></a><a name="showObj(flash.events.IEventDispatcher,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">showObj</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function showObj(obj:IEventDispatcher, evt:String):void</code><p></p><p></p><p>
+		 Show eventmappings from a specific EventDispatcher with optional specific event
+		 if the optional event is given, it only shows that in the logger if present.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">obj</span>:IEventDispatcher</code> &mdash; (optional). 
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">evt</span>:String</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.showObj(mySprite);</pre></div>
+		 </div></div><a name="status()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">status</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function status():void</code><p></p><p></p><p>
+		 Returns how many EventDispatchers and Events are mapped
+		 
+		 </p><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.status();</pre></div>
+		 </div></div><a name="uninstallProfiler()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">uninstallProfiler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function uninstallProfiler():void</code><p></p><p></p><p>
+		 Remove/uninstall profiling
+		 </p><p><span class="label">See also</span></p><div class="seeAlso">installProfiler</div><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="4.0"><pre> ELM.uninstallProfiler();</pre></div>
+		 </div></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="AUTHOR"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AUTHOR</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const AUTHOR:String = Michael Dinkelaker</code><p></p></div><a name="constantDetail"></a><a name="AUTOREMOVE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AUTOREMOVE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const AUTOREMOVE:String = AUTO_REMOVE</code><p></p></div><a name="constantDetail"></a><a name="JOB_ADD"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">JOB_ADD</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const JOB_ADD:String = ADD</code><p></p></div><a name="constantDetail"></a><a name="JOB_DISABLE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">JOB_DISABLE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const JOB_DISABLE:String = DISABLE</code><p></p></div><a name="constantDetail"></a><a name="JOB_ENABLE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">JOB_ENABLE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const JOB_ENABLE:String = ENABLE</code><p></p></div><a name="constantDetail"></a><a name="JOB_REMOVE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">JOB_REMOVE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const JOB_REMOVE:String = REMOVE</code><p></p></div><a name="constantDetail"></a><a name="JOB_SHOW"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">JOB_SHOW</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const JOB_SHOW:String = SHOW</code><p></p></div><a name="constantDetail"></a><a name="LOG_ERROR"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LOG_ERROR</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG_ERROR:int = 60</code><p></p></div><a name="constantDetail"></a><a name="LOG_INFO"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LOG_INFO</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG_INFO:int = 20</code><p></p></div><a name="constantDetail"></a><a name="LOG_LISTING"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LOG_LISTING</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG_LISTING:int = 1</code><p></p></div><a name="constantDetail"></a><a name="LOG_PROFILING"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LOG_PROFILING</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG_PROFILING:int = 3</code><p></p></div><a name="constantDetail"></a><a name="LOG_SHOWING"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LOG_SHOWING</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG_SHOWING:int = 2</code><p></p></div><a name="constantDetail"></a><a name="LOG_WARNING"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LOG_WARNING</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOG_WARNING:int = 40</code><p></p></div><a name="constantDetail"></a><a name="PROTECTED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">PROTECTED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const PROTECTED:String = PROTECTED</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 1.52</code><p></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Mittwoch Juni 15 2011, 02:23 PM +02:00  </center></div></body></html><!--<br/>Mittwoch Juni 15 2011, 02:23 PM +02:00  -->
